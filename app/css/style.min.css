@@ -12,6 +12,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 *::after, *::before {
   box-sizing: border-box;
 }
@@ -463,6 +467,10 @@ header .phones a {
   max-width: 240px;
 }
 
+.guide {
+  margin-bottom: 100px;
+}
+
 .guide .flex-small {
   max-width: 754px;
   width: 100%;
@@ -578,8 +586,18 @@ header .phones a {
   background: #fff;
   box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.15);
   border-radius: 10px 10px 0px 0px;
-  padding: 30px;
+  padding: 0px;
   width: 100%;
+  position: relative;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s cubic-bezier(0, 0.79, 1, 0.65);
+}
+
+.guide .link-guide.hidden {
+  padding: 30px;
+  max-height: max-content;
+  margin-bottom: 50px;
 }
 
 .guide .link-guide .guide-title {
@@ -593,5 +611,198 @@ header .phones a {
 
 .guide .link-guide ul {
   columns: 2;
-  column-gap: 50px;
+  column-gap: 30px;
+}
+
+.guide .link-guide ul > li {
+  margin-bottom: 15px;
+}
+
+.guide .link-guide ul > li:first-child,
+.guide .link-guide ul > li span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.guide .link-guide ul > li span {
+  margin-right: 5px;
+}
+
+.guide .link-guide ul > li > a {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #0E4434;
+}
+
+.guide-desc {
+  font-size: 18px;
+  line-height: 125%;
+}
+
+.guide-desc a {
+  color: #fb7a9a;
+}
+
+.product .main-title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  color: #0E4434;
+  margin-bottom: 60px;
+}
+
+.product .flex-products {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.product .product-thumb .image {
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
+  padding: 0 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .product-thumb .image img {
+  max-width: 300px;
+  max-height: 330px;
+}
+
+.product .product-thumb .image img::after {
+  content: '';
+  position: absolute;
+  border: 10px solid #A0ECB5;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  border-radius: 50%;
+}
+
+.product .product-thumb .caption {
+  padding: 0 15px;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%;
+}
+
+.product .product-thumb .features {
+  flex: 0 0 60%;
+}
+
+.product .product-thumb .specifics {
+  flex: 0 0 40%;
+}
+
+.product .product-thumb .features,
+.product .product-thumb .specifics {
+  padding: 0 15px;
+}
+
+.product .product-thumb .info-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  color: #1f907a;
+}
+
+.product .product-thumb ul > li {
+  list-style: inside;
+  font-size: 18px;
+  line-height: 125%;
+  color: #0E4434;
+}
+
+.product .product-title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  color: #1f907a;
+}
+
+.product .product-desc {
+  font-size: 18px;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+
+.product .specifics-point tr {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.product .specifics-point tr th {
+  text-align: left;
+}
+
+.product .specifics-point tr th:nth-child(2n) {
+  font-weight: normal;
+  padding-left: 5px;
+}
+
+.product .info {
+  margin-top: 68px;
+}
+
+.product .info .flex-info {
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+
+.product .info .title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #0E4434;
+  border-radius: 10px 10px 0px 0px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product .info .cons {
+  background-color: #fb7a9a;
+}
+
+.product .info .pros {
+  background-color: #76DFCB;
+}
+
+.product .info .box {
+  padding: 20px;
+}
+
+.product .info ul li {
+  font-size: 18px;
+  line-height: 125%;
+  margin-bottom: 14px;
+}
+
+.product .info ul li:last-child {
+  margin-bottom: 0;
+}
+
+.product .product-about {
+  box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.15);
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.product .btn-poduct {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
 }
