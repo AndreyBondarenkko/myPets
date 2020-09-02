@@ -450,6 +450,10 @@ header .phones a {
   margin-bottom: 15px;
 }
 
+.card-box__images img {
+  height: 140px;
+}
+
 .card-box__title {
   font-weight: bold;
   font-size: 30px;
