@@ -1,2 +1,15 @@
+//Fonts
+@import "_fonts.scss";
+//Vars
 @import "_vars.scss";
+//Interface
 @import "_interface.scss";
+
+
+//site
+@import "block/mobmenu.scss";
+
+@import "block/header.scss";
+@import "block/banner.scss";
+@import "block/card.scss";
+@import "block/guide.scss";

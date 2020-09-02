@@ -1,0 +1,61 @@
+.banner {
+    background-color: $lightGreen;
+    min-height: 380px;
+    margin-bottom: 86px;
+
+    .flex-wrapper {
+        flex-direction: column;
+    }
+
+    .breadcrumbs-row {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+
+    .breadcrumb {
+        display: flex;
+        position: relative;
+        font-size: 14px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        white-space: nowrap;
+
+        & > li {
+            display: flex;
+            align-items: center;
+
+            & > a {
+                font-weight: bold;
+                font-size: 16px;
+                color: $darkGreen;
+                opacity: 0.5;
+
+                &:hover{
+                    opacity: 1;
+                }
+
+            }
+
+            i{
+                margin: 0 0.5rem;
+                opacity: 0.5;
+            }
+
+            &:last-child{
+                a{
+                    opacity: .5;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+
+    .main-title{
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        max-width: 656px;
+    }
+}
