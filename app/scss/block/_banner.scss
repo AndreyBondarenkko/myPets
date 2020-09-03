@@ -2,6 +2,36 @@
     background-color: $lightGreen;
     min-height: 380px;
     margin-bottom: 86px;
+    position: relative;
+
+    .banner-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        background-position:
+            top 77px right 216px, top 283px right 205px, bottom 32px right 413px, bottom 47px left 280px, top 130px left 384px, top 205px right 307px, top 123px right 54px, top 342px left 122px, top 200px right 100px, top 0px right 0px;
+        background-size: 56px, 50px, 38px, 40px, 56px, 50px, 37px, 40px, 40px, 56px;
+        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+        background-image:
+            url(../images/food-1.png),
+            url(../images/food-2.png),
+            url(../images/bons-1.png),
+            url(../images/bons-2.png),
+            url(../images/bons-r-1.png),
+            url(../images/food-b-1.png),
+            url(../images/bons-2.png),
+            url(../images/food-2.png),
+            url(../images/bons-1.png),
+            url(../images/food-b-1.png);
+    }
+
+    .flex-banner {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
 
     .flex-wrapper {
         flex-direction: column;
@@ -21,29 +51,29 @@
         overflow: hidden;
         white-space: nowrap;
 
-        & > li {
+        &>li {
             display: flex;
             align-items: center;
 
-            & > a {
+            &>a {
                 font-weight: bold;
                 font-size: 16px;
                 color: $darkGreen;
                 opacity: 0.5;
 
-                &:hover{
+                &:hover {
                     opacity: 1;
                 }
 
             }
 
-            i{
+            i {
                 margin: 0 0.5rem;
                 opacity: 0.5;
             }
 
-            &:last-child{
-                a{
+            &:last-child {
+                a {
                     opacity: .5;
                     pointer-events: none;
                 }
@@ -51,7 +81,7 @@
         }
     }
 
-    .main-title{
+    .main-title {
         font-weight: bold;
         font-size: 50px;
         line-height: 1.2;

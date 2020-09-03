@@ -1,0 +1,142 @@
+.footer{
+    background-color: $bgFooter;
+    padding-top: 70px;
+    .flex-foter-desc{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+    .flex-footer-contacts{
+        padding: 0 15px;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .flex-footer-menu{
+        padding: 0 15px;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .desc-image{
+        img{
+            width: 100%;
+        }
+    }
+    .footer-image{
+        margin-bottom: 30px;
+    }
+    .footer-subtitle{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 150%;
+        color: $green;
+        margin-bottom: 12px;
+        max-width: 400px;
+    }
+    .footer-txt{
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 150%;
+    }
+    .flex-footer-contacts{
+        line-height: 150%;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .footer-title{
+        font-size: 20px;
+        color: $green;
+        margin-bottom: 52px;
+    }
+    .address{
+        margin-bottom: 15px;
+    }
+    .phone{
+        margin-bottom: 80px;
+        a{
+            color: $darkGreen;
+            transition: all .2s ease;
+            &:hover{
+                color: $btnColor;
+            }
+        }
+    }
+    .folow{
+        color: $green;
+        margin-bottom: 17px;
+    }
+    .footer-soc{
+        display: flex;
+        overflow: hidden;
+        a{
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            transition: all .2s ease;
+            &.facebook{
+                background-color: $colorFacebok;
+            }
+            &.twitter{
+                background-color: $colorTwitter;
+            }
+            &.youtube{
+                background-color: $colorYoutube;
+            }
+            &.instagram{
+                background: $colorInstagram;
+            }
+            &.pinterest{
+                background-color: $colorPinterest;
+            }
+            i{
+                color: $white;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                background: $btnColor;
+            }
+        }
+    }
+    .top-menu{
+        padding: 0;
+        margin-bottom: 42px;
+        & > li{
+            margin-bottom: 5px;
+            line-height: 190%;
+            & > a{
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 18px;
+                color: $darkGreen;
+                transition: all .2s ease;
+                &:hover{
+                    color:$btnColor;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &.active{
+                a{
+                    color:$btnColor;
+                }
+            }
+        }
+    }
+    .protect{
+        a{
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 150%;
+            color: $green;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.post{
+    .main-title{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .subtitle{
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 125%;
+        color: $green;
+        max-width: 700px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .flex-post{
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+        padding: 15px;
+    }
+    &-inner{
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgba(72, 72, 72, 0.15);
+
+        .post-img{
+            overflow: hidden;
+            display: block;
+            max-height: 260px;
+            img{
+                transition: all .2s;
+            }
+        }
+
+        .caption{
+            padding: 20px 15px 15px 15px;
+            .post-title{
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 150%;
+                margin-bottom: 30px;
+                a{
+                    color: $darkGreen;
+                    transition: all .2s ease;
+                    &:hover{
+                        color: $btnColor;
+                    }
+                }
+            }
+            .post-desc{
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+        }
+        &:hover{
+            .post-img img{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .post-allLincks{
+        background-color: $greenBG;
+        padding: 50px;
+        margin-top: 80px;
+        .main-title{
+            margin-bottom: 40px;
+        }
+    }
+    .post-more{
+        columns: 4;
+        column-gap: 30px;
+        padding: 0 15px;
+    
+        li{
+            text-align: center;
+            a{
+                font-weight: bold;
+                font-size: 22px;
+                line-height: 150%;
+                text-transform: capitalize;
+                color: $darkGreen;
+                transition: all .2s ease;
+
+                &:hover{
+                    color: $btnColor;
+                }
+            }
+            &:nth-child(odd){
+                margin-bottom: 40px;
+            }
+        }
+
+    }
+}

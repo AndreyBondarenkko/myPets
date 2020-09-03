@@ -6,11 +6,30 @@
 @import "_interface.scss";
 
 
-//site
-@import "block/mobmenu.scss";
 
+
+//mobile menu
+@import "block/mobmenu.scss";
+//block header
 @import "block/header.scss";
+//block banner
 @import "block/banner.scss";
+//block card
 @import "block/card.scss";
+//block guide
 @import "block/guide.scss";
+//block product
 @import "block/product.scss";
+//block blog
+@import "block/blog.scss";
+//block faq
+@import "block/faq.scss";
+//block post
+@import "block/post.scss";
+//block footer
+@import "block/footer.scss";
+
+
+
+//media file
+@import "block/media.scss";
