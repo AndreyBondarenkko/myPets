@@ -1,6 +1,7 @@
 /*mobile menu*/
 .navbar{
     position: relative;
+    
     .btn-mobileMenu {
         display: block !important;
         position: relative;
@@ -126,7 +127,6 @@
                         font-weight: bold;
                         font-size: 16px;
                         line-height: 190%;
-                        color: $darkGreen;
                         transition: all .2s ease;
                         &:hover{
                             color: $green;

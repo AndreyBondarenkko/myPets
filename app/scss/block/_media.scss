@@ -1,0 +1,129 @@
+@media (max-width: 1470px) {
+
+    //header
+    .navbar {
+        #topnav {
+            width: 1110px;
+            height: 300px;
+            padding: 30px;
+        }
+
+        .top-menu {
+            .menu-item>a {
+                font-size: 21px;
+            }
+        }
+    }
+
+    //banner
+    .banner {
+        min-height: 350px;
+        margin-bottom: 75px;
+
+        .breadcrumbs-row {
+            margin-top: 30px;
+            margin-bottom: 90px;
+        }
+
+        .main-title {
+            font-size: 48px;
+        }
+
+        .banner-box {
+            background-position: top 67px right 205px, top 266px right 157px, bottom 68px right 404px, bottom 6px left 288px, top 146px left 369px, top 217px right 308px, top 87px right 54px, top 304px left 101px, top 208px right 100px, top 0px right 0px;
+        }
+    }
+
+    //card
+    .card {
+        &-box__awardI {
+            max-width: 70px;
+            margin-top: -77px;
+        }
+
+        &-box__text {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    //interface
+    .btn {
+        font-size: 16px;
+    }
+
+    //header
+    .navbar {
+        #topnav {
+            width: 940px;
+            padding: 20px;
+        }
+
+        .top-menu {
+            .menu-item>a {
+                font-size: 21px;
+            }
+        }
+    }
+
+    //banner
+    .banner {
+        min-height: 320px;
+
+        .main-title {
+            font-size: 40px;
+        }
+
+        .banner-box {
+            background-position: top 77px right 205px, top 182px right 164px, bottom 61px right 426px, bottom 15px left 243px, top 148px left 315px, top 196px right 308px, top 62px right 81px, top 284px left 92px, top 230px right 76px, top 0px right 0px;
+        }
+    }
+
+    //card
+    .card{
+
+        &-box__images img {
+            height: 120px;
+        }
+        &-box__title {
+            font-size: 29px;
+        }
+        &-box__text {
+            font-size: 19px;
+        }
+    }
+
+    //guide{
+    .guide{
+        margin-bottom: 80px;
+        &-block{
+            flex: 0 0 25%;
+            max-width: 0 0 25%;
+        }
+        
+    }
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}

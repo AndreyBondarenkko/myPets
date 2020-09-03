@@ -13,7 +13,7 @@
         left: 70%;
         background-position:
         top 117px right 216px, top 307px right 211px, bottom 56px right 213px, bottom 142px left 349px, top 377px left 341px, top 546px right 300px, top 466px right 45px, top 364px left 222px, top 248px right 106px, top 22px right 12px;
-        background-size: 56px, 50px, 208px, 40px, 56px, 50px, 37px, 40px, 40px, 206px;
+        background-size: 55px, 51px, 211px, 66px, 69px, 61px, 158px, 56px, 100px, 206px;
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
         background-image:
         url(../../images/blueElips.png),
@@ -78,14 +78,18 @@
     }
 
     .flex-faq{
-        -ms-flex: 0 0 66.666667%;
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
+        -ms-flex: 0 0 58.333333%;
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
     }
     .flex-img{
-        -ms-flex: 0 0 33.333333%;
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+
+        img{
+            width: 100%;
+        }
     }
     .btn-faq{
         display: inline-block;
