@@ -211,6 +211,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   outline: none;
+  display: none;
 }
 
 .owl-dots .owl-dot {

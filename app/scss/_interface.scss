@@ -253,6 +253,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     outline: none;
+    display: none;
     & .owl-dot{
         width: 8px;
         height: 8px;
