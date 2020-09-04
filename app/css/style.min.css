@@ -130,7 +130,7 @@ body {
   z-index: -1;
 }
 
-.link-btn span {
+.link-btn span.arithm {
   position: relative;
   display: block;
   width: 2px;
@@ -142,7 +142,7 @@ body {
   margin-left: 10px;
 }
 
-.link-btn span::after {
+.link-btn span.arithm::after {
   content: '';
   position: absolute;
   left: 50%;

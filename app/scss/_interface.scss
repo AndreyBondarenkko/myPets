@@ -169,7 +169,7 @@ body {
             z-index: -1;
         }
 
-        span {
+        span.arithm {
             position: relative;
             display: block;
             width: 2px;
@@ -191,6 +191,7 @@ body {
                 border-radius: 5px;
                 transition: all .2s ease;
             }
+
         }
 
         &:hover div::after {
