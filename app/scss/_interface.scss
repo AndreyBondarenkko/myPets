@@ -144,6 +144,7 @@ body {
     &-btn {
         border: none;
         padding: 0;
+        display: inline-block;
         color: $btnColor;
         letter-spacing: 0.03em;
         font-weight: bold;

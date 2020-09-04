@@ -104,6 +104,7 @@ body {
 .link-btn {
   border: none;
   padding: 0;
+  display: inline-block;
   color: #fb7898;
   letter-spacing: 0.03em;
   font-weight: bold;
