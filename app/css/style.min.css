@@ -540,6 +540,7 @@ body {
   padding-left: 15px;
   padding-top: 45px;
   padding-bottom: 10px;
+  display: block;
 }
 
 .card .flex-wrapper {
