@@ -57,7 +57,7 @@ body {
   height: 100vh;
   background-position: top 1500px left 10px, top 1500px right 10px, top 1800px left 5px, top 1700px right 5px, top 2300px left 7px, top 2300px right 10px, top 2800px left 17px, top 2800px right 12px, top 3200px left 5px, top 3200px right 12px, top 3800px right 7px, top 3900px left 15px, top 4300px right 8px, top 4200px left 12px, top 4600px right 5px, top 4700px left 12px, top 5200px right 3px, top 5300px left 7px, top 5500px right 5px, top 5800px right 8px, top 6000px left 12px, top 6400px right 5px, top 6700px left 12px, top 7000px right 3px, top 7300px left 7px, top 7800px right 5px;
   background-size: 42px, 50px, 50px, 50px, 80px, 65px, 74px, 64px, 30px, 46px, 38px, 56px, 32px, 53px, 23px, 43px, 21px, 34px, 64px, 32px, 25px, 55px, 40px, 65px, 24px, 34px, 34px;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-image: url(../images/food-1.png), url(../images/food-2.png), url(../images/bons-1.png), url(../images/bons-2.png), url(../images/bons-r-1.png), url(../images/food-b-1.png), url(../images/bons-2.png), url(../images/food-b-1.png), url(../images/food-2.png), url(../images/food-1.png), url(../images/bons-1.png), url(../images/bons-2.png), url(../images/bons-2.png), url(../images/food-2.png), url(../images/bons-r-1.png), url(../images/food-b-1.png), url(../images/food-1.png), url(../images/bons-1.png), url(../images/food-b-1.png), url(../images/food-2.png), url(../images/bons-1.png), url(../images/food-b-1.png), url(../images/food-b-1.png), url(../images/food-1.png), url(../images/bons-1.png), url(../images/food-b-1.png);
 }
 
@@ -130,8 +130,9 @@ body {
   z-index: -1;
 }
 
-.link-btn div {
+.link-btn span {
   position: relative;
+  display: block;
   width: 2px;
   height: 12px;
   background: #fb7898;
@@ -141,7 +142,7 @@ body {
   margin-left: 10px;
 }
 
-.link-btn div::after {
+.link-btn span::after {
   content: '';
   position: absolute;
   left: 50%;
