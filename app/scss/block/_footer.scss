@@ -1,6 +1,7 @@
 .footer{
     background-color: $bgFooter;
     padding-top: 70px;
+    padding-bottom: 20px;
     .flex-foter-desc{
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
@@ -26,6 +27,7 @@
     }
     .footer-image{
         margin-bottom: 30px;
+        display: block;
     }
     .footer-subtitle{
         font-weight: bold;
@@ -65,7 +67,10 @@
     }
     .folow{
         color: $green;
-        margin-bottom: 17px;
+        p{
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
     }
     .footer-soc{
         display: flex;

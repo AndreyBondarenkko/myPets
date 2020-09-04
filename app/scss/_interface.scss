@@ -123,8 +123,8 @@ body {
 }
 
 .flex-small {
-    flex: 0 0 754px;
-    max-width: 754px;
+    flex: 0 0 69%;
+    max-width: 69%;
     width: 100%;
     margin: 0 auto;
     padding-right: 15px;
@@ -245,5 +245,25 @@ body {
 
     &:focus::before {
         opacity: 0;
+    }
+}
+.owl-dots{
+    bottom: 25%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+    & .owl-dot{
+        width: 8px;
+        height: 8px;
+        background: rgba(255, 78, 120, 0.5)!important;
+        border-radius: 50%;
+        & + .owl-dot{
+            margin-left: 10px;
+        }
+        &.active{
+            width: 40px;
+            border-radius: 5px;
+        }
     }
 }

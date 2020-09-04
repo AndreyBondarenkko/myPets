@@ -17,6 +17,8 @@ gulp.task("scss", function(){
 gulp.task("css", function(){
   return gulp.src([
     "node_modules/normalize.css/normalize.css",
+    "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+    "node_modules/owl.carousel/dist/assets/owl.theme.default.min.css",
   ])
   .pipe(concat("libs.min.css"))
     .pipe(gulp.dest("app/css"))
@@ -33,6 +35,7 @@ gulp.task("html",function(){
 gulp.task("js", function(){
 	return gulp.src([
     "node_modules/jquery/dist/jquery.js",
+    "node_modules/owl.carousel/dist/owl.carousel.min.js",
 	])
 	.pipe(concat("libs.min.js"))
 	.pipe(uglify())

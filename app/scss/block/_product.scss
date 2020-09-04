@@ -7,10 +7,12 @@
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
         max-width: 100%;
+        padding: 0 15px;
     }
 
     .product {
         &-thumb {
+            padding: 0 15px;
             .image {
                 -ms-flex: 0 0 41.666667%;
                 flex: 0 0 41.666667%;
@@ -143,6 +145,7 @@
             margin-bottom: 30px;
         }
     }
+
     .specifics-point{
         tr{
             margin-bottom: 10px;

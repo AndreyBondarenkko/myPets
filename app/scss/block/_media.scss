@@ -1,6 +1,6 @@
 @media (max-width: 1470px) {
 
-    //header
+    //header done
     .navbar {
         #topnav {
             width: 1110px;
@@ -15,26 +15,24 @@
         }
     }
 
-    //banner
+    //banner done
     .banner {
-        min-height: 350px;
-        margin-bottom: 75px;
+        margin-bottom: 50px;
 
-        .breadcrumbs-row {
-            margin-top: 30px;
-            margin-bottom: 90px;
+        .breadcrumb {
+            margin-bottom: 25px;
         }
 
         .main-title {
-            font-size: 48px;
+            font-size: 47px;
+            margin-bottom: 50px;
         }
-
-        .banner-box {
-            background-position: top 67px right 205px, top 266px right 157px, bottom 68px right 404px, bottom 6px left 288px, top 146px left 369px, top 217px right 308px, top 87px right 54px, top 304px left 101px, top 208px right 100px, top 0px right 0px;
+        .banner-box{
+            background-position:top 81% right 32%, top 38% right 27%, bottom 27% right 50%, bottom 9% left 32%, bottom -16% right 17%, top 78% right 0%, top 42% right 42%, top 57% right 13%, top 23% right 9%, top -2% right -1%;
         }
     }
 
-    //card
+    //card done
     .card {
         &-box__awardI {
             max-width: 70px;
@@ -45,11 +43,23 @@
             margin-bottom: 60px;
         }
     }
+
+    //product
+    //blog
+    //faq
+    .faq{
+        .faq-box-image{
+            background-position: top 14% right -4%, top 59% right -3%, bottom -11% right -29%, bottom 7% left 34%, top 5% left 39%, top 7% right 30%, top 45% right -21%, top 5% left 3%, top 20% right -10%, top 5% right -20%;
+        }
+    }
+
+    //footer
+
 }
 
 @media (max-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 960px;
     }
 
     //interface
@@ -57,73 +67,950 @@
         font-size: 16px;
     }
 
-    //header
+    .flex-small{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .main-title {
+        font-size: 36px;
+    }
+
+    //header done
+    body {
+        &.hidden {
+            overflow: hidden !important;
+        }
+    }
+
     .navbar {
         #topnav {
-            width: 940px;
+            position: fixed;
+            top: 80px;
+            bottom: 0;
+            left: -300px;
+            width: 280px;
+            height: 100vh;
+            border-radius: 0;
             padding: 20px;
+            .follow{
+                display: block;
+                text-align: center;
+                p{
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 125%;
+                    color: $green;
+                    margin-bottom: 8px;
+                }
+                a{
+                    color: $red;
+                    transition: all .2s ease;
+                    & + a{
+                        margin-left: 20px;
+                    }
+
+                    i{
+                        font-size: 17px;
+                    }
+                    &:hover{
+                        color: $darkGreen;
+                    }
+
+                }
+            }
+
+            .images-block{
+                display: block;
+                width: 280px;
+                height: 200px;
+                margin-left: -20px;
+                    background-position:bottom 25% left 50%, bottom 20% right -17%, bottom 26% left 66%, bottom 23% left -12%, bottom 12% left -11%, bottom 31% right 5%, bottom 29% left 26%;
+                background-size: 42px, 150px, 50px, 70px, 80px, 65px, 74px;
+                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+                background-image:
+                    url(../../images/blueElips.png),
+                    url(../../images/elipsDots.svg),
+                    url(../../images/bons-1.png),
+                    url(../../images/blueElips.png),
+                    url(../../images/bons-r-1.png),
+                    url(../../images/food-b-1.png),
+                    url(../../images/bons-2.png);
+            }
+            &.open {
+                top: 80px;
+                left: 0;
+            }
         }
 
         .top-menu {
-            .menu-item>a {
-                font-size: 21px;
+            flex-direction: column;
+
+            .menu-item {
+
+                text-align: center;
+
+                & > a {
+                    font-size: 21px;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+                ul{
+                    margin-bottom: 30px;
+                    li{
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }
 
-    //banner
-    .banner {
-        min-height: 320px;
-
-        .main-title {
-            font-size: 40px;
-        }
-
-        .banner-box {
-            background-position: top 77px right 205px, top 182px right 164px, bottom 61px right 426px, bottom 15px left 243px, top 148px left 315px, top 196px right 308px, top 62px right 81px, top 284px left 92px, top 230px right 76px, top 0px right 0px;
+    .header {
+        .flex-wrapper {
+            height: 80px;
         }
     }
 
-    //card
-    .card{
+    //banner done
+    .banner {
+        padding-top: 20px;
+        margin-bottom: 35px;
+        
+        .main-title {
+            font-size: 40px;
+        }
+    }
+
+    //card done
+    .card {
 
         &-box__images img {
             height: 120px;
         }
+
         &-box__title {
             font-size: 29px;
         }
+
         &-box__text {
             font-size: 19px;
         }
     }
 
-    //guide{
-    .guide{
+    //guide done
+    .guide {
         margin-bottom: 80px;
-        &-block{
+
+        &-block {
             flex: 0 0 25%;
-            max-width: 0 0 25%;
+            max-width: 25%;
         }
-        
+        &-content{
+            flex: 0 0 75%;
+            max-width: 75%;
+        }
+
+        &-desc {
+            font-size: 17px;
+        }
+
+        &-guide {
+            ul>li>a {
+                font-size: 17px;
+            }
+        }
+
+        .link-guide {
+            .link-guide {
+                font-size: 36px;
+                margin-bottom: 21px;
+            }
+        }
+    }
+
+    //product done
+    .product{
+        .main-title{
+            margin-left: 10px;
+        }
+        .product {
+            &-thumb {
+                .image {
+                    max-height: 400px;
+                    img{
+                        max-width: 230px;
+                        max-height: 230px;
+                    }
+                }
+                ul {
+                    & > li{
+                        font-size: 16px;
+                    }
+                }
+            }
+            &-title {
+                font-size: 24px;
+            }
+    
+            &-desc {
+                font-size: 16px;
+            }
+            &-about{
+                margin-bottom: 40px;
+            }
+        }
+        .info{
+            margin-top: 60px;
+            .title{
+                font-size: 19px;
+                height: 40px;
+            }
+            .box{
+                padding: 20px 15px;
+            }
+        }
+    }
+
+    //faq done
+    .faq{
+        .faq-box-image{
+            background-size: 35px,43px, 151px, 46px, 49px, 41px, 128px, 46px, 60px, 146px;
+            background-position: top 13% right -4%, top 70% right -3%, bottom -3% right -28%, bottom 6% left 52%, top 5% left 39%, top 31% right 30%, top 62% right -21%, top 6% left 3%, top 17% right -10%, top 19% right -20%;
+        }
+        .faq-txt {
+            max-width: 100%;
+        }
+        .faq-inner {
+            height: 285px;
+        }
+        .faq-answer {
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .faq-accordion {
+            font-size: 19px;
+        }
+        .panel {
+            font-size: 15px;
+        }
+    }
+
+    //footer
+    .footer{
+        .footer{
+            &-subtitle {
+                max-width: 100%;
+            }
+            &-title{
+                margin-bottom: 30px;
+            }
+        }
+        .top-menu{
+            margin-bottom: 52px;
+            & > li {
+            line-height: 160%;
+                a{
+                    font-size: 17px;
+                }
+            }
+        }
     }
 
 }
 
 @media (max-width: 992px) {
     .container {
-        max-width: 960px;
+        max-width: 720px;
+    }
+    //interface
+    .flex-small{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    //header done
+    .header{
+        .flex-wrapper{
+            height: 65px;
+        }
+        .navbar{
+            #topnav{
+                top: 65px;
+                &.open {
+                    top: 65px;
+                }
+            }
+        }
+    }
+
+    //banner done
+    .banner{
+        .flex-banner{
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+
+        .main-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .banner-box {
+            background-position: top 35% right 13%,  top 61% right 45%,  bottom 31% right 19%,  bottom 15% left 11%,  bottom -18% left 54%, top 76% right 0%,  top 31% right 47%,  top 45% left 26%,  top 8% right 23%,  top 0% right 0%;
+        }
+
+    }
+
+    //card done
+    .card{
+        margin-bottom: 40px;
+    }
+
+    //guide done
+    .guide{
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 65px;
+
+        .link-guide {
+            margin-bottom: 40px;
+        }
+
+        &-name{
+            font-size: 19px;
+        }
+        .link-btn {
+            margin-bottom: 40px;
+        }
+        .link{
+            &-guide{
+                padding: 20px;
+                &.hidden{
+                    a{
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    //product done
+    .product{
+        .main-title{
+            margin-left: 10px;
+        }
+        .product {
+            &-thumb {
+                .image {
+                    max-height: 300px;
+                    img{
+                        max-width: 150px;
+                        max-height: 160px;
+                    }
+                    .elips-top{
+                        top: -30px;
+                        left: 15px;
+                        &:after{
+                            top: -30px;
+                        }
+                    }
+                    .elips-bottom{
+                        bottom: -38px;
+                        right: 30px;
+                        &:after{
+                            bottom: 10px;
+                            right: -35px;
+                        }
+                    }
+                    &::after{
+                        border-width: 30px;
+                    }
+                }
+                ul {
+                    & > li{
+                        font-size: 16px;
+                    }
+                }
+                .features,
+                .specifics{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                .features{
+                    margin-bottom: 20px;
+                }
+            }
+            &-desc{
+                margin-bottom: 20px;
+            }
+        }
+        .info{
+            .title{
+                font-size: 18px;
+                height: 38px;
+            }
+        }
+    }
+
+    //blog done
+    .blog{
+        .flex-image{
+            padding: 0 15px;
+        }
+        .flex-content{
+            padding: 0 15px;
+        }
+    }
+
+    //faq
+    .faq{
+        .faq{
+            &-txt {
+                font-size: 17px;
+            }
+            &-answer {
+                padding: 15px;
+            }
+            &-accordion {
+                font-size: 18px;
+                padding-right: 20px;
+                line-height: 1.2;
+            }
+            &-box-image {
+                background-position: top 13% right -4%, top 70% right -3%, bottom -8% right -26%, bottom 8% left 52%, top 8% left 43%, top 34% right 30%, top 66% right -43%, top 7% left 3%, top 45% right -13%, top 17% right -20%;
+            }
+        }
+    }
+
+    //footer
+    .footer{
+        padding-top: 50px;
+        .footer{
+            &-image {
+            margin-bottom: 15px;
+            }
+            &-title{
+                margin-bottom: 10px;
+            }
+            &-soc a{
+                height: 25px;
+                width: 25px;
+            }
+        }
+        .address{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .phone{
+            margin-bottom: 25px;
+            a{
+                font-size: 17px;
+            }
+        }
+        .follow{
+            p{
+                line-height: 1.2;
+                font-size: 17px;
+            }
+        }
+        &-soc a i {
+            font-size: 15px;
+        }
+        .protect a {
+            font-size: 19px;
+        }
+        .top-menu > li{
+            line-height: 1.2!important;
+        }
     }
 }
 
 @media (max-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 540px;
     }
+
+    //interface
+    .main-title {
+        font-size: 30px;
+        margin-left: 0!important;
+        margin-bottom: 30px;
+    }
+
+    //banner done
+    .banner {
+        .breadcrumb {
+            margin-bottom: 20px;
+        }
+        .main-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+        .data{
+            font-size: 14px;
+        }
+        .banner-box{
+            background-position: top 39% right 13%, top 77% right 58%, bottom 10% right 22%, bottom -3% left 1%, bottom -18% left 52%, top 76% right 0%, top 51% right 44%, top 73% left 15%, top 8% right 28%, top 0% right -2%;
+        }
+    }
+
+    //card done
+    .card{
+        margin-bottom: 30px;
+        .owl-dots{
+            display: block;
+        }
+    }
+
+    //guide done
+    .guide{
+        margin-bottom: 55px;
+        &-name{
+            font-size: 18px;
+        }
+        .link-guide{
+            ul {
+                columns: 1;
+                & > li {
+                    margin-bottom: 12px;
+                }
+            }
+            .guide-title {
+                font-size: 34px;
+                margin-bottom: 15px;
+            }
+        } 
+        .guide-desc {
+            font-size: 16px;
+        }
+    }
+
+    //product done
+    .product{
+        .main-title {
+            text-align: center;
+        }
+        .product {
+            &-thumb {
+                .image {
+                    flex: 0 0 80%;
+                    max-width: 180%;
+                    margin-right: auto;
+                    margin-left: auto;
+                    margin-bottom:  50px;
+                    height: 330px;
+                    max-height: 330px;
+
+                    .elips-top{
+                        top: -5px;
+                        left: 0px;
+                    }
+                    .elips-bottom{
+                        bottom: -15px;
+                        right: 30px;
+                    }
+                }
+                .caption{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
+                ul {
+                    & > li{
+                        font-size: 16px;
+                    }
+                }
+                .features{
+                    margin-bottom: 20px;
+                }
+            }
+            &-desc{
+                margin-bottom: 20px;
+            }
+            &-title{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+
+        }
+        .info{
+            margin-top: 20px;
+            .title{
+                font-size: 18px;
+                height: 38px;
+            }
+            .flex-info {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    //blog done
+    .blog{
+        iframe {
+            margin-bottom: 20px;
+        }
+        article{
+            padding: 0;
+            p{
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .blok-around img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    //faq
+    .faq{
+        padding: 80px 0;
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        .flex{
+            &-faq {
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            &-img{
+                -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+        .faq-box-image {
+            left: 0;
+            z-index: -1;
+            background-position: top 6% right -2%, top 3% left -3%, top 15% right -6%, top 17% left -3%, top 34% right 0%, top 31% left 0%, top 45% right -18%, top 43% left -4%, top 60% right -5%, top 57% left -23%, top 66% right -3%, top 62% left 4%, top 86% right -3%, top 74% left -2%, top 74% right 0%;
+            background-size: 35px,43px, 151px, 46px, 49px, 41px, 128px, 46px, 60px, 146px, 49px, 41px, 38px, 46px, 60px;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,;
+            background-image:
+            url(../../images/blueElips.png),
+            url(../../images/food-2.png),
+            url(../../images/elipsDots.svg),
+            url(../../images/bons-1.png),
+            url(../../images/bons-r-1.png),
+            url(../../images/blueElips.png),
+            url(../../images/elips.png),
+            url(../../images/food-b-1.png),
+            url(../../images/elips.png),
+            url(../../images/elipsDots.svg),
+            url(../../images/blueElips.png),
+            url(../../images/elips.png),
+            url(../../images/food-b-1.png),
+            url(../../images/elips.png),
+            url(../../images/elipsDots.svg);;
+        }
+    }
+
+    //footer
+    .footer{
+        .folow p {
+            font-size: 17px;
+            line-height: 1.2;
+        }
+        .flex-foter-desc,
+        .flex-footer-contacts,
+        .flex-footer-menu{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .flex-foter-desc{
+            order: 1;
+            margin-bottom: 25px;
+        }
+        .flex-footer-menu{
+            order: 2;
+            margin-bottom: 25px;
+        }
+        .flex-footer-contacts{
+            order: 3;
+        }
+        .top-menu {
+            margin-bottom: 15px;
+            columns: 2;
+        }
+        .footer-image,
+        .footer-txt {
+            text-align: center;
+        }
+        .footer-subtitle {
+            text-align: center;
+        }
+        .footer-title{
+            text-align: center;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
-    .container {
-        max-width: 540px;
+    //interface
+    .main-title{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    //header
+    .header{
+        .navbar {
+            .btn-mobileMenu {
+                width: 40px;
+                height: 40px;  
+            }
+        }
+        .custom{
+            &-logo{
+                max-width: 150px;
+            }
+        }
+        .inp-group{
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    //banner done
+    .banner{
+        .banner-box{
+            left: 60%;
+            background-size: 35px, 29px, 25px, 29px, 46px, 34px, 29px, 32px, 31px, 41px;
+            background-position: top 45% right 13%, top 79% right 70%, bottom 10% right 22%, bottom -1% left 1%, bottom -12% left 52%, top 72% right 0%, top 28% right 55%, top 51% left 15%, top 9% right 25%, top 0% right 0%;
+        }
+        .flex-banner{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .banner .breadcrumb > li > a {
+            font-size: 15px;
+        }
+    }
+
+    //card
+    .card{
+        &-box__text {
+            font-size: 18px;
+        }
+
+        &-box__title {
+            font-size: 24px;
+        }
+        .flex-card{
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
+
+    //guide done
+    .guide{
+        margin-bottom: 50px;
+        .flex-small {
+            padding-right: 0px;
+            padding-left: 0px; 
+        }
+        .guide{
+            &-block {
+                flex: 0 0 30%;
+                max-width: 30%;
+                padding: 10px;;
+            }
+            &-content {
+                padding: 10px;
+                flex: 0 0 70%;
+                max-width: 70%;
+            }
+            &-name {
+                font-size: 17px;
+            }
+        }
+        .link{
+            &-btn {
+                margin-bottom: 20px;
+            }
+            &-guide{
+                padding: 15px;
+                .guide-title {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+                ul > li > a {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+
+    //product done
+    .product{
+        .btn-poduct {
+            margin-bottom: 60px;
+        }
+        .product {
+            &-thumb {
+                .image {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    margin-bottom: 25px;
+                    order: 1;
+                    &::after{
+                        border: 30px solid $productElips;
+                    }
+
+                    .elips-top{
+                        background: url(../../images/elipsDots-m.svg);
+                        width: 85px;
+                        height: 85px;
+                        top: 5px;
+                        left: 13px;
+                        &::after{
+                            background: url(../../images/blueElips-m.png);
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                    .elips-bottom{
+                        background: url(../../images/elipsDots-m.svg);
+                        width: 85px;
+                        height: 85px;
+                        bottom: -10px;
+                        right: 40px;
+                        &::after{
+                            background: url(../../images/blueElips-m.png);
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+                .caption{
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    order: 2;
+                }
+                ul {
+                    & > li{
+                        font-size: 16px;
+                    }
+                }
+                .features{
+                    margin-bottom: 20px;
+                }
+            }
+            &-desc{
+                margin-bottom: 20px;
+            }
+            &-title{
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+        }
+        .info{
+            margin-top: 20px;
+            .title{
+                font-size: 18px;
+                height: 38px;
+            }
+            .flex-info {
+                flex: 0 0 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    //blog
+    .blog{
+        .resume{
+            margin-bottom: 65px;
+        }
+        .flex-content {
+            -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+        .flex-image {
+            -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        .blog-doctorName {
+            line-height: 1.2;
+            font-size: 16px;
+        }
+        .blog-doctorAbout{
+            margin-top: 20px;
+        }
+        .inner{
+            border-top: none;
+            padding-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(30, 144, 122, 0.2);
+            a{
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .blog-cos{
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .blok-around{
+            img{
+                border-width: 9px
+            }
+        }
+    }
+
+    //faq
+    .faq{
+        padding: 80px 0;
+        clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
+        .main-title {
+            text-align: center;
+        }
+        .flex{
+            &-img{
+                padding: 0 15px;
+                img{
+                    margin-bottom: -75px;
+                }
+            }
+        }
+        .faq{
+            &-txt {
+            text-align: center;
+            margin-bottom: 24px;
+            }
+            &-inner {
+                height: 430px;
+            }
+            &-accordion {
+                font-size: 16px;
+                padding-right: 10px;
+            }
+        }
+        .btn-inner{
+            text-align: center;
+        }
+    }
+
+    //footer
+    .footer{
+        .footer{
+            &-subtitle {
+                margin-bottom: 12px;
+            }
+            &-txt{
+                margin-bottom: 42px;
+            }
+            &-soc {
+                justify-content: center;
+            }
+        }
+        .flex-footer-contacts{
+            text-align: center;
+        }
     }
 }

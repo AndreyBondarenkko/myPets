@@ -63,6 +63,13 @@
         transition: all .5s ease;
         padding: 40px;
 
+        .follow{
+            display: none;
+        }
+        .images-block{
+            display: none;
+        }
+
         &.open{
             top: 50px;
         }

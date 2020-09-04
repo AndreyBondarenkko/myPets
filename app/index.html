@@ -80,17 +80,25 @@
                                     </ul>
                                 </li>
                             </ul>
+                            <div class="follow">
+                                <p>Follow #MyPetsNessThat</p>
+                                <div class="soc">
+                                  <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                  <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                  <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="images-block"></div>
                         </div>
                     </nav>
                 </div>
                 <div class="flex-col-auto">
-                    <a href="#"><img src="images/logo.png" alt="MyPets" class="custom-logo"></a>
+                    <a class="custom-link" href="#"><img src="images/logo.png" alt="MyPets" class="custom-logo"></a>
                 </div>
                 <div class="flex-col-auto">
                     <div id="serch" class="inp-group">
                         <input type="text" name="search" placeholder="Serch" class="form-control">
-                        <button type="button" class="btn-search"><i class="fa fa-search"
-                                aria-hidden="true"></i></button>
+                        <button type="button" class="btn-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -98,7 +106,6 @@
     </header>
 
     <section class="banner">
-        <div class="banner-box"></div>
         <div class="container">
             <div class="flex-wrapper">
                 <div class="flex-banner">
@@ -120,16 +127,14 @@
                     <h1 class="main-title">The Best Dog Shampoo (Review) in 2020</h1>
                     <div class="data">Last Updata: 10 Apr 2020</div>
                 </div>
-                <div class="flex-banner-image">
-                    <div class="box"></div>
-                </div>
+                <div class="banner-box"></div>
             </div>
         </div>
     </section>
 
     <section class="card">
         <div class="container">
-            <div class="flex-wrapper">
+            <div class="flex-wrapper owl-carousel" id="owl-example">
                 <div class="flex-card">
                     <div class="card-box">
                         <div class="card-box__awardI"><img src="images/card-1.png" alt="product"></div>
@@ -181,61 +186,57 @@
 
     <section class="guide">
         <div class="container">
-            <div class="flex-wrapper">
-                <div class="flex-small">
-                    <div class="flex-wrapper">
-                            <div class="guide-block">
-                                <div class="box-img">
-                                    <img src="images/doctor.png" class="guide-image"></img>
-                                </div>
-                            </div>
-                            <div class="guide-content">
-                                <div class="guide-name">Your guide to this review todey is by veterinarian <span>Dr.Tracy Douglass</span></div>
-                                <div class="guide-data">Published <time>17:06 pm</time> </div>
-                                <button class="link-btn click transition"><span>Hide</span> Contents <div class="arithm transition"></div></button>
-                            </div>
-                            <div class="link-guide transition">
-                                <div class="guide-title">Contents</div>
-                                <ul>
-                                    <li>The Best Dog Shampoo</li>
-                                    <li><span class="num">1.</span><a href="#">Pro Pet Works All Natural Oatmeal Dog Shampoo and Conditioner</a></li>
-                                    <li><span class="num">2.</span><a href="#">Veterinary Formula</a></li>
-                                    <li><span class="num">3.</span><a href="#">Earthbath All Natural Organic Dog Shampoo</a></li>
-                                    <li><span class="num">4.</span><a href="#">Honeydew Colloidal Oatmeal Dog Shampoo</a></li>
-                                    <li><span class="num">5.</span><a href="#">Furminator deShedding Premium Pet Shampoo</a></li>
-                                    <li><span class="num">6.</span><a href="#">Douxo Chlorhexidine PS + Climbazole Pet Shampoo</a></li>
-                                    <li><span class="num">7.</span><a href="#">Bexley Labs Curaseb Shampoo for Dogs</a></li>
-                                    <li><span class="num">8.</span><a href="#">Fieldworks Supply Natural Dog Wash</a></li>
-                                    <li><span class="num">9.</span><a href="#">Wahl Lavender Waterless No Rinse Pet Shampoo</a></li>
-                                    <li><span class="num">10.</span><a href="#">Paws & Pals Natural Dog Shampoo and Conditioner</a></li>
-                                    <li><span class="num">11.</span><a href="#">Nootie Oatmeal Dog Wash with Soothing Aloe</a></li>
-                                    <li><span class="num">12.</span><a href="#">Burt’s Bees Tearless Puppy Shampoo</a></li>
-                                    <li><span class="num">13.</span><a href="#">4-Legger Certified Organic Dog Shampoo</a></li>
-                                    <li><span class="num">14.</span><a href="#">Wahl Color Bright Dog Shampoo</a></li>
-                                    <li><span class="num">15.</span><a href="#">Vet’s Best Allergy Itch Relief Dog Shampoo</a>
-                                    </li>
-                                </ul>
-                            </div>
+            <div class="flex-small">
+                <div class="flex-wrapper">
+                    <div class="guide-block">
+                        <div class="box-img">
+                            <img src="images/doctor.png" class="guide-image" alt="doctor image"></img>
+                        </div>
                     </div>
-                    <div class="flex-wrapper">
-                            <div class="guide-desc">
-                                Dog shampoos are important <a href="#">canine care products</a> that are geared primarily for
-                                the maintenance of their hygiene. Some products actually come with different formulations to help in the control and
-                                management of pests like fleas and ticks. However useful, some canine shampoos contain harsh ingredients
-                                that may pose a threat to your <a href="#">pet’s health.</a> It is therefore, important for you to learn
-                                how to choose the correct hair care product for your pet. We have researched the market for the best dog shampoo
-                                to help you get started.
-                            </div>
+                    <div class="guide-content">
+                        <div class="guide-name">Your guide to this review todey is by veterinarian <span>Dr.Tracy Douglass</span></div>
+                        <div class="guide-data">Published <time>17:06 pm</time> </div>
+                        <button class="link-btn transition"><span class="show">Hide</span> Contents <div class="arithm transition"></div></button>
                     </div>
+                </div>
+
+                <div class="link-guide transition">
+                    <div class="guide-title">Contents</div>
+                    <ul>
+                        <li>The Best Dog Shampoo</li>
+                        <li><span class="num">1.</span><a href="#">Pro Pet Works All Natural Oatmeal Dog Shampoo and Conditioner</a></li>
+                        <li><span class="num">2.</span><a href="#">Veterinary Formula</a></li>
+                        <li><span class="num">3.</span><a href="#">Earthbath All Natural Organic Dog Shampoo</a></li>
+                        <li><span class="num">4.</span><a href="#">Honeydew Colloidal Oatmeal Dog Shampoo</a></li>
+                        <li><span class="num">5.</span><a href="#">Furminator deShedding Premium Pet Shampoo</a></li>
+                        <li><span class="num">6.</span><a href="#">Douxo Chlorhexidine PS + Climbazole Pet Shampoo</a></li>
+                        <li><span class="num">7.</span><a href="#">Bexley Labs Curaseb Shampoo for Dogs</a></li>
+                        <li><span class="num">8.</span><a href="#">Fieldworks Supply Natural Dog Wash</a></li>
+                        <li><span class="num">9.</span><a href="#">Wahl Lavender Waterless No Rinse Pet Shampoo</a></li>
+                        <li><span class="num">10.</span><a href="#">Paws & Pals Natural Dog Shampoo and Conditioner</a></li>
+                        <li><span class="num">11.</span><a href="#">Nootie Oatmeal Dog Wash with Soothing Aloe</a></li>
+                        <li><span class="num">12.</span><a href="#">Burt’s Bees Tearless Puppy Shampoo</a></li>
+                        <li><span class="num">13.</span><a href="#">4-Legger Certified Organic Dog Shampoo</a></li>
+                        <li><span class="num">14.</span><a href="#">Wahl Color Bright Dog Shampoo</a></li>
+                        <li><span class="num">15.</span><a href="#">Vet’s Best Allergy Itch Relief Dog Shampoo</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="guide-desc">
+                    Dog shampoos are important <a href="#">canine care products</a> that are geared primarily for
+                    the maintenance of their hygiene. Some products actually come with different formulations to help in the control and
+                    management of pests like fleas and ticks. However useful, some canine shampoos contain harsh ingredients
+                    that may pose a threat to your <a href="#">pet’s health.</a> It is therefore, important for you to learn
+                    how to choose the correct hair care product for your pet. We have researched the market for the best dog shampoo
+                    to help you get started.
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- <section class="product">
+    <section class="product">
         <div class="container">
             <h3 class="main-title">The Best Dog Shampoos</h3>
-
             <div class="flex-wrapper ">
                 <div class="flex-product products-list">
                     <div class="product-thumb">
@@ -402,8 +403,7 @@
                                 <div class="elips-bottom"></div>
                             </a>
                             <div class="caption ">
-                                <div class="product-title">Pro Pet Works All Natural Oatmeal Dog Shampoo and Conditioner
-                                </div>
+                                <div class="product-title">Earthbath All Natural Organic Dog Shampoo</div>
                                 <div class="product-desc">Designed to be the best hypoallergenic dog shampoo, the Pro
                                     Pet Works Organic Oatmeal and Aloe canine hair care product comes enriched with
                                     vitamins to help improve the overall health of your pooch’s coat while also making
@@ -471,12 +471,12 @@
                         </div>
                         <button class="btn btn-poduct">Check latest price</button>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="blog">
+    <section class="blog">
         <div class="container">
             <div class="flex-small">
                 <div class="flex-wrapper">
@@ -651,7 +651,7 @@
                         </article>
                     </div>
                     <div class="blog-cos">
-                        <div class="inner">
+                        <div class="inner" id="inner-wap">
                             <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                             <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -682,9 +682,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="faq">
+    <section class="faq">
         <div class="faq-box-image"></div>
         <div class="container">
             <div class="flex-wrapper">
@@ -694,7 +694,7 @@
                     <div class="faq-answer">
                         <div class="faq-inner">
                             <div class="faq-box">
-                                <div class="faq-accordion"><span class="number">1.</span> How often should I clean out my new pet?
+                                <div class="faq-accordion active"><span class="number">1.</span> How often should I clean out my new pet?
                                 </div>
                                 <div class="panel">
                                     <p>You should clean your pet out at least once or twice a week. A regular clean out not only
@@ -758,21 +758,23 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-faq">Show more</a>
+                    <div class="btn-inner">
+                        <a href="#" class="btn btn-faq">Show more</a>
+                    </div>
                 </div>
                 <div class="flex-img">
                     <img src="images/dogBG.png" alt="pictyres dog">
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="post">
+    <section class="post">
         <div class="container">
             <h4 class="main-title">Related Posts</h4>
             <div class="subtitle">We have selected the top related posts for our users. Take a look, maybe it will
                 be interesting for you too.</div>
-            <div class="flex-wrapper">
+            <div class="flex-wrapper" id="owl-carusel-post">
                 <div class="flex-post">
                     <div class="post-inner">
                         <a class="post-img" href="#">
@@ -825,7 +827,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
             <div class="post-allLincks">
                 <div class="container">
                     <h4 class="main-title">You May Also Like This Posts</h4>
@@ -843,10 +845,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </div> -->
+    </section>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <a class="footer-image" href="#"><img src="images/logo.png" alt="footer logo"></a>
             <div class="flex-wrapper">
@@ -896,7 +898,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,8 +1,9 @@
 .banner {
     background-color: $lightGreen;
-    min-height: 380px;
-    margin-bottom: 86px;
+    margin-bottom: 68px;
     position: relative;
+    padding-top: 40px;
+    padding-bottom: 24px;
 
     .banner-box {
         position: absolute;
@@ -10,8 +11,7 @@
         right: 0;
         bottom: 0;
         left: 50%;
-        background-position:
-            top 77px right 216px, top 283px right 205px, bottom 32px right 413px, bottom 47px left 280px, top 130px left 384px, top 205px right 307px, top 123px right 54px, top 342px left 122px, top 200px right 100px, top 0px right 0px;
+        background-position:top 82% right 26%, top 37% right 19%, bottom 24% right 41%, bottom 24% left 43%, bottom -12% right 15%, top 59% right 0%, top 40% right 32%, top 56% right 13%, top 14% right 9%, top -2% right -1%;
         background-size: 56px, 50px, 38px, 40px, 56px, 50px, 37px, 40px, 40px, 56px;
         background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
         background-image:
@@ -34,16 +34,6 @@
         padding: 0 15px;
     }
 
-    .flex-wrapper {
-        flex-direction: column;
-    }
-
-    .breadcrumbs-row {
-        position: relative;
-        margin-top: 40px;
-        margin-bottom: 100px;
-    }
-
     .breadcrumb {
         display: flex;
         position: relative;
@@ -51,12 +41,13 @@
         flex-wrap: nowrap;
         overflow: hidden;
         white-space: nowrap;
+        margin-bottom: 27px;
 
-        &>li {
+        & > li {
             display: flex;
             align-items: center;
 
-            &>a {
+            & > a {
                 font-weight: bold;
                 font-size: 16px;
                 color: $darkGreen;
@@ -83,10 +74,8 @@
     }
 
     .main-title {
-        font-weight: bold;
         font-size: 50px;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        max-width: 656px;
+        position: relative;
+        z-index: 2;
     }
 }
