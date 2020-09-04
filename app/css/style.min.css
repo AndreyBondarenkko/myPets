@@ -944,6 +944,10 @@ body {
   margin-bottom: 100px;
 }
 
+.blog iframe {
+  width: 100%;
+}
+
 .blog .main-title {
   margin-bottom: 15px;
 }
