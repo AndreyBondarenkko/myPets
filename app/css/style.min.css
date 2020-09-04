@@ -154,7 +154,7 @@ body {
   transition: all .2s ease;
 }
 
-.link-btn:hover div::after {
+.link-btn:hover .arithm::after {
   transform: rotate(0deg);
 }
 
