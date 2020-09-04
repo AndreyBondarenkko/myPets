@@ -83,5 +83,12 @@
     }
     .owl-dots{
         display: none;
+        bottom: 25%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .owl-dots{
+        display: none;
     }
 }

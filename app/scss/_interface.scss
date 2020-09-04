@@ -187,11 +187,12 @@ body {
                 height: 12px;
                 background: $btnColor;
                 border-radius: 5px;
+                transition: all .2s ease;
             }
         }
 
-        &:hover div {
-            transform: rotate(-90deg);
+        &:hover div::after {
+            transform: rotate(0deg);
         }
     }
 
@@ -248,17 +249,14 @@ body {
     }
 }
 .owl-dots{
-    bottom: 25%;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     outline: none;
-    display: none;
+
     & .owl-dot{
         width: 8px;
         height: 8px;
         background: rgba(255, 78, 120, 0.5)!important;
         border-radius: 50%;
+        outline: none;
         & + .owl-dot{
             margin-left: 10px;
         }

@@ -17,8 +17,10 @@
         //Выравнивание блоков по высоте
         heightBlock('.card .card-box__text');
         heightBlock('.product .product-about .box');
-        heightBlock('.post .post-desc');
-        heightBlock('.post .post-more li');
+        
+        if (document.documentElement.clientWidth > 576) {
+            heightBlock('.post .post-more li');
+        }
 
         //block hidden
         let btn = document.querySelector(".link-btn");
@@ -77,9 +79,6 @@
                 320: {
                     items: 1,
                 },
-                576: {
-                    items: 1,
-                },
                 768: {
                     items: 2,
                 },
@@ -91,39 +90,58 @@
 
         $('#owl-carusel-post').owlCarousel({
             items: 4,
+            arrows: false,
+            responsive: {
+                320: {
+                    items: 1,
+                },
+                500: {
+                    items: 2,
+                },
+                768: {
+                    items: 2,
+                },
+                992: {
+                    items: 3,
+                },
+                1201: {
+                    items: 4,
+                }
+            }
         })
-        
-        if (document.documentElement.clientWidth < 768) { 
+
+        if (document.documentElement.clientWidth < 768) {
             //перенос заголовка
-            function chengeTitle () {
+            function chengeTitle() {
                 let productTitle = document.querySelectorAll(".product-thumb");
                 let title = document.querySelectorAll(".product-title");
-    
-                for(let k = 0; k < productTitle.length; k++){
-                    for(let i = 0; i < title.length; i++){
+
+                for (let k = 0; k < productTitle.length; k++) {
+                    for (let i = 0; i < title.length; i++) {
                         k == i ? productTitle[k].prepend(title[i]) : false;
                     }
                 }
             }
             chengeTitle();
             //перенос картинки футер
-            let fotImage = document.querySelector(".desc-image");
-            let footerBlock = document.querySelector(".flex-footer-contacts");
-            footerBlock.append(fotImage);
+            function footerImage() {
+                let fotImage = document.querySelector(".desc-image");
+                let footerBlock = document.querySelector(".flex-footer-contacts");
+                footerBlock.append(fotImage);
+            }
+            footerImage();
         }
-
-        if (document.documentElement.clientWidth < 576) { 
-            let resume = document.querySelector(".resume")
-            let resumeContent = document.querySelector(".blog-doctorAbout");
-            resume.append(resumeContent);
+        console.log(document.documentElement.clientWidth)
+        if (document.documentElement.clientWidth < 576) {
+            function resumeBlock() {
+                let resume = document.querySelector(".resume")
+                let resumeContent = document.querySelector(".blog-doctorAbout");
+                resume.append(resumeContent);
+            }
+            resumeBlock()
             //change src
             $('.flex-img > img').attr('src', '../images/dogBG-m.png');
         }
-
-
-
-
-
     });
 
     window.onload = function () {};
