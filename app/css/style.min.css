@@ -357,23 +357,23 @@ body {
 }
 
 .navbar .top-menu .menu-item > a.dogs::after {
-  background: url(../../images/dogmenu.svg);
+  background-image: url(../images/dogmenu.svg);
 }
 
 .navbar .top-menu .menu-item > a.cats::after {
-  background: url(../../images/catsmenu.png);
+  background-image: url(../images/catsmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.fish::after {
-  background: url(../../images/fishmenu.png);
+  background-image: url(../images/fishmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.birds::after {
-  background: url(../../images/birdsmenu.png);
+  background-image: url(../images/birdsmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.aminals::after {
-  background: url(../../images/aminalsmenu.png);
+  background-image: url(../images/aminalsmenu.png);
 }
 
 .navbar .top-menu .menu-item ul li a {
@@ -799,7 +799,7 @@ body {
   left: 30px;
   width: 176.92px;
   height: 179px;
-  background: url(../../images/elipsDots.svg);
+  background: url(../images/elipsDots.svg);
 }
 
 .product .product-thumb .image .elips-top:after {
@@ -809,7 +809,7 @@ body {
   right: 10px;
   width: 38px;
   height: 38px;
-  background: url(../../images/blueElips.png);
+  background: url(../images/blueElips.png);
 }
 
 .product .product-thumb .image .elips-bottom {
@@ -818,7 +818,7 @@ body {
   right: 80px;
   width: 176.92px;
   height: 179px;
-  background: url(../../images/elipsDots.svg);
+  background: url(../images/elipsDots.svg);
 }
 
 .product .product-thumb .image .elips-bottom:after {
@@ -828,7 +828,7 @@ body {
   right: -45px;
   width: 38px;
   height: 38px;
-  background: url(../../images/blueElips.png);
+  background: url(../images/blueElips.png);
 }
 
 .product .product-thumb .image:hover img {

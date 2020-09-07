@@ -113,19 +113,19 @@
                     background-repeat: no-repeat;
                 }
                 &.dogs::after{
-                    background: url(../../images/dogmenu.svg);  
+                    background-image: url(../images/dogmenu.svg);  
                 }
                 &.cats::after{
-                    background: url(../../images/catsmenu.png);  
+                    background-image: url(../images/catsmenu.png);  
                 }
                 &.fish::after{
-                    background: url(../../images/fishmenu.png);  
+                    background-image: url(../images/fishmenu.png);  
                 }
                 &.birds::after{
-                    background: url(../../images/birdsmenu.png);  
+                    background-image: url(../images/birdsmenu.png);  
                 }
                 &.aminals::after{
-                    background: url(../../images/aminalsmenu.png);  
+                    background-image: url(../images/aminalsmenu.png);  
                 }
             }
             ul{
