@@ -30,7 +30,7 @@
         display: block;
     }
     .footer-subtitle{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 16px;
         line-height: 150%;
         color: $green;
@@ -38,13 +38,13 @@
         max-width: 400px;
     }
     .footer-txt{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 13px;
         line-height: 150%;
     }
     .flex-footer-contacts{
         line-height: 150%;
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 18px;
     }
     .footer-title{
@@ -117,7 +117,7 @@
             margin-bottom: 5px;
             line-height: 190%;
             & > a{
-                font-weight: bold;
+                font-family: "ProximaBold";
                 text-transform: uppercase;
                 font-size: 18px;
                 color: $darkGreen;
@@ -138,7 +138,7 @@
     }
     .protect{
         a{
-            font-weight: bold;
+            font-family: "ProximaBold";
             font-size: 20px;
             line-height: 150%;
             color: $green;

@@ -11,20 +11,10 @@
         right: 0;
         bottom: 0;
         left: 50%;
-        background-position:top 82% right 26%, top 37% right 19%, bottom 24% right 41%, bottom 24% left 43%, bottom -12% right 15%, top 59% right 0%, top 40% right 32%, top 56% right 13%, top 14% right 9%, top -2% right -1%;
-        background-size: 56px, 50px, 38px, 40px, 56px, 50px, 37px, 40px, 40px, 56px;
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-        background-image:
-            url(../images/food-1.png),
-            url(../images/food-2.png),
-            url(../images/bons-1.png),
-            url(../images/bons-2.png),
-            url(../images/bons-r-1.png),
-            url(../images/food-b-1.png),
-            url(../images/bons-2.png),
-            url(../images/food-2.png),
-            url(../images/bons-1.png),
-            url(../images/food-b-1.png);
+        img{
+            width: 100%;
+            max-height: 375px;
+        }
     }
 
     .flex-banner {
@@ -48,7 +38,7 @@
             align-items: center;
 
             & > a {
-                font-weight: bold;
+                font-family: "ProximaBold";
                 font-size: 16px;
                 color: $darkGreen;
                 opacity: 0.5;

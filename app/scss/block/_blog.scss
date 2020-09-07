@@ -14,7 +14,7 @@
         }
     }
     &-porpouse{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 18px;
         position: relative;
         display: inline-block;
@@ -106,14 +106,14 @@
         margin-bottom: 100px;
     }
     &-doctorName{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 22px;
         line-height: 150%;
         text-transform: capitalize;
         margin-bottom: 6px;
     }
     &-doctorPlace{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 16px;
         line-height: 150%;
         color: $green;

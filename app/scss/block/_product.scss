@@ -2,7 +2,9 @@
     .main-title {
         margin-left: 180px;
     }
-
+    .container{
+        max-width: 1222px;
+    }
     .flex-products {
         -ms-flex: 0 0 100%;
         flex: 0 0 100%;
@@ -113,7 +115,7 @@
             }
 
             .info-title{
-                font-weight: bold;
+                font-family: "ProximaBold";
                 font-size: 20px;
                 line-height: 120%;
                 letter-spacing: 0.02em;
@@ -131,7 +133,7 @@
 
         }
         &-title {
-            font-weight: bold;
+            font-family: "ProximaBold";
             font-size: 32px;
             line-height: 120%;
             letter-spacing: 0.02em;
@@ -167,7 +169,7 @@
             padding: 0 15px;
         }
         .title{
-            font-weight: bold;
+            font-family: "ProximaBold";
             font-size: 20px;
             line-height: 150%;
             color: $darkGreen;
@@ -192,6 +194,7 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            max-width: 335px;
             li{
                 font-size: 18px;
                 line-height: 125%;

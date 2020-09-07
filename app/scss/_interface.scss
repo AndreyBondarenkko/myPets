@@ -36,14 +36,13 @@ a {
 }
 
 body {
-    font-family: "Proxima", sans-serif;
+    font-family: "ProximaRegular", sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
     color: $darkGreen;
     position: relative;
 }
-
 .bg-image{
     position: absolute;
     top: 0;
@@ -51,94 +50,10 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background-position:
-        top 5% left 1%, top 4% right -1%, top 6% left 5%,  
-        top 6% right 0%, top 8% left -1%, top 9% right 0%,  
-        top 11% left 3%, top 12% right 0%, top 13% left 2%,  
-        top 14% right 5%, top 15% left 6%, top 16% right 0%,  
-        top 17% left 2%, top 18% right 8%, top 20% left 0%,  
-        top 23% right 0%, top 21% left 5%, top 25% right 6%,  
-        top 24% left 0%, top 28% right 3%, top 27% left 7%,  
-        top 30% right 0%, top 30% left 0%, top 33% right 6%,  
-        top 33% left 2%, top 36% right 0%, top 36% left 0%,  
-        top 39% right 4%, top 39% left 4%, top 42% right 0%,  
-        top 42% left 6%, top 44% right 6%, top 44% left 1%,  
-        top 46% right 1%, top 46% left 6%, top 48% right 7%,  
-        top 48% left 0%, top 50% right 1%, top 50% left 6%,  
-        top 52% right 6%, top 53% left 1%, top 55% right 2%,  
-        top 56% left 6%, top 59% right 0%, top 60% left 0%,  
-        top 62% right 5%, top 64% left 0%, top 66% right 0%,  
-        top 68% left 0%, top 71% right 0%;
-    background-size:
-        42px, 50px, 50px, 50px, 80px, 65px, 74px, 64px,
-        38px, 46px, 38px, 56px, 32px, 53px, 43px, 43px,
-        31px, 34px, 64px, 42px, 45px, 55px, 40px, 65px,
-        38px, 46px, 38px, 56px, 32px, 53px, 43px, 43px,
-        31px, 34px, 64px, 42px, 45px, 55px, 40px, 65px,
-        44px, 34px, 37px;
-    background-repeat: 
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
-        no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-image:
-        url(../images/food-1.png),
-        url(../images/food-2.png),
-        url(../images/bons-1.png),
-        url(../images/bons-2.png),
-        url(../images/bons-r-1.png),
-        url(../images/food-b-1.png),
-        url(../images/bons-2.png),
-        url(../images/food-b-1.png),
-        url(../images/food-2.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/bons-2.png),
-        url(../images/bons-2.png),
-        url(../images/food-2.png),
-        url(../images/bons-r-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-2.png),
-        url(../images/bons-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/bons-r-1.png),
-        url(../images/food-b-1.png),
-        url(../images/bons-2.png),
-        url(../images/food-b-1.png),
-        url(../images/food-2.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/bons-2.png),
-        url(../images/bons-2.png),
-        url(../images/food-2.png),
-        url(../images/bons-r-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-1.png),
-        url(../images/bons-1.png),
-        url(../images/food-b-1.png),
-        url(../images/food-2.png),
-        url(../images/food-b-1.png);
+    background-image: url(../images/all.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 
 .transition {
@@ -164,8 +79,8 @@ body {
 }
 
 .flex-small {
-    flex: 0 0 69%;
-    max-width: 69%;
+    flex: 0 0 756px;
+    max-width: 756px;
     width: 100%;
     margin: 0 auto;
     padding-right: 15px;
@@ -173,7 +88,7 @@ body {
 }
 
 .main-title {
-    font-weight: bold;
+    font-family: "ProximaBold";
     font-size: 38px;
     line-height: 120%;
     letter-spacing: 0.02em;
@@ -188,7 +103,7 @@ body {
         display: inline-block;
         color: $btnColor;
         letter-spacing: 0.03em;
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 17px;
         line-height: 125%;
         position: relative;
@@ -250,7 +165,7 @@ body {
     cursor: pointer;
     display: block;
     padding: .8em 1em;
-    font-weight: bold;
+    font-family: "ProximaBold";
     font-size: 17px;
     line-height: 125%;
     letter-spacing: 0.05em;

@@ -9,23 +9,13 @@
         position: absolute;
         top: 0;
         right: 0;
-        bottom: 0;
-        left: 70%;
-        background-position:
-        top 117px right 216px, top 307px right 211px, bottom 56px right 213px, bottom 142px left 349px, top 377px left 341px, top 546px right 300px, top 466px right 45px, top 364px left 222px, top 248px right 106px, top 22px right 12px;
-        background-size: 55px, 51px, 211px, 66px, 69px, 61px, 158px, 56px, 100px, 206px;
-        background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-        background-image:
-        url(../../images/blueElips.png),
-        url(../../images/food-2.png),
-        url(../../images/elipsDots.svg),
-        url(../../images/bons-1.png),
-        url(../../images/bons-r-1.png),
-        url(../../images/blueElips.png),
-        url(../../images/elips.png),
-        url(../../images/food-b-1.png),
-        url(../../images/elips.png),
-        url(../../images/elipsDots.svg);
+        bottom: 10%;
+        left: 40%;
+        z-index: -1;
+        background-image: url(../images/faqblock.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top 0% left 100%;
     }
 
     /*scroll*/
@@ -55,7 +45,7 @@
         margin-bottom: 10px;
     }
     &-txt{
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 18px;
         line-height: 125%;
         color: $green;     
@@ -105,7 +95,7 @@
         width: 100%;
         outline: none;
         transition: 0.4s;
-        font-weight: bold;
+        font-family: "ProximaBold";
         font-size: 20px;
         line-height: 150%;
         color: $darkGreen;

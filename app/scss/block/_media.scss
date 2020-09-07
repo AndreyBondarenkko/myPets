@@ -1,16 +1,4 @@
 @media (max-width: 1470px) {
-
-    .bg-image{
-        background-size:
-            38px, 42px, 37px, 39px, 35px, 41px,
-            45px, 42px, 38px, 41px, 38px, 39px, 
-            32px, 40px, 39px, 36px, 34px, 33px, 
-            41px, 34px, 37px, 38px, 36px, 43px, 
-            38px, 41px, 38px, 39px, 32px, 37px, 
-            43px, 43px, 31px, 34px, 46px, 42px, 
-            35px, 35px, 40px, 40px, 44px, 34px, 37px;
-        background-position: top 5% left 1%, top 4% right -1%, top 7% left 0%,  top 8% right 1%, top 10% left -1%, top 11% right 0%,  top 12% left 1%, top 13% right -1%, top 15% left -0%,  top 15% right 1%, top 17% left -1%, top 18% right -0%,  top 19% left 1%, top 20% right 1%, top 22% left 0%,  top 24% right 1%, top 24% left -1%, top 26% right 0%,  top 26% left 1%, top 29% right -1%, top 29% left 0%,  top 32% right 1%, top 32% left -1%, top 35% right 0%,  top 34% left 1%, top 38% right -1%, top 38% left 0%,  top 41% right 1%, top 41% left -1%, top 44% right 0%,  top 44% left 1%, top 46% right -1%, top 46% left 0%,  top 48% right 1%, top 48% left -1%, top 50% right 0%,  top 50% left 1%, top 52% right -1%, top 52% left 0%,  top 54% right 1%, top 55% left -1%, top 57% right 0%,  top 58% left 1%, top 61% right -1%, top 62% left 0%,  top 64% right 1%, top 66% left -1%, top 68% right 0%,  top 70% left 1%, top 73% right -1%;
-    }
     //header done
     .navbar {
         #topnav {
@@ -24,6 +12,11 @@
                 font-size: 21px;
             }
         }
+    }
+    
+    .bg-image {
+        top: 4%;
+        bottom: 9%;
     }
 
     //banner done
@@ -39,7 +32,8 @@
             margin-bottom: 50px;
         }
         .banner-box{
-            background-position:top 81% right 32%, top 38% right 27%, bottom 27% right 50%, bottom 9% left 32%, bottom -16% right 17%, top 78% right 0%, top 42% right 42%, top 57% right 13%, top 23% right 9%, top -2% right -1%;
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -54,15 +48,13 @@
         }
     }
 
-    //product
-    //blog
     //faq
     .faq{
         .faq-box-image{
-            background-position: top 14% right -4%, top 59% right -3%, bottom -11% right -29%, bottom 7% left 34%, top 5% left 39%, top 7% right 30%, top 45% right -21%, top 5% left 3%, top 20% right -10%, top 5% right -20%;
+            background-position: top 55% left 100%;
         }
     }
-
+ 
     //post
     .post {
         .post{
@@ -82,14 +74,12 @@
         max-width: 960px;
     }
     .bg-image{
-        background-size:
-            36px, 32px, 37px, 39px, 35px, 37px,
-            35px, 36px, 38px, 34px, 38px, 39px, 
-            32px, 37px, 39px, 36px, 34px, 33px, 
-            39px, 34px, 37px, 38px, 36px, 37px, 
-            38px, 37px, 38px, 39px, 32px, 37px, 
-            37px, 39px, 31px, 34px, 36px, 34px, 
-            35px, 35px, 37px, 38px, 34px, 34px, 37px;
+        background-position:
+            top 0 right 0,
+            top 0 left -20px;
+        background-repeat: repeat-y;
+        background-size: auto;
+        background-image: url(../images/halfbg.png), url(../images/halfbg.png);
     }
 
     //interface
@@ -121,12 +111,12 @@
             width: 280px;
             height: 100vh;
             border-radius: 0;
-            padding: 20px;
+            padding: 0;
             .follow{
                 display: block;
                 text-align: center;
                 p{
-                    font-weight: bold;
+                    font-family: "ProximaBold";
                     font-size: 17px;
                     line-height: 125%;
                     color: $green;
@@ -151,23 +141,15 @@
 
             .images-block{
                 display: block;
-                width: 280px;
-                height: 200px;
-                margin-left: -20px;
-                    background-position:bottom 25% left 50%, bottom 20% right -17%, bottom 26% left 66%, bottom 23% left -12%, bottom 12% left -11%, bottom 31% right 5%, bottom 29% left 26%;
-                background-size: 42px, 150px, 50px, 70px, 80px, 65px, 74px;
-                background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-                background-image:
-                    url(../../images/blueElips.png),
-                    url(../../images/elipsDots.svg),
-                    url(../../images/bons-1.png),
-                    url(../../images/blueElips.png),
-                    url(../../images/bons-r-1.png),
-                    url(../../images/food-b-1.png),
-                    url(../../images/bons-2.png);
+                width: 100%;
+                height: 193px;
+                img{
+                    width: 100%;
+                }
             }
             &.open {
                 top: 80px;
+                box-shadow: none;
             }
         }
 
@@ -260,6 +242,9 @@
 
     //product done
     .product{
+        .container {
+            max-width: 960px;
+        }
         .main-title{
             margin-left: 10px;
         }
@@ -305,8 +290,9 @@
     //faq done
     .faq{
         .faq-box-image{
-            background-size: 35px,43px, 151px, 46px, 49px, 41px, 128px, 46px, 60px, 146px;
-            background-position: top 13% right -4%, top 70% right -3%, bottom -3% right -28%, bottom 6% left 52%, top 5% left 39%, top 31% right 30%, top 62% right -21%, top 6% left 3%, top 17% right -10%, top 19% right -20%;
+            background-position: top 70% left 0;
+            bottom: 0;
+            
         }
         .faq-txt {
             max-width: 100%;
@@ -374,16 +360,6 @@
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .bg-image{
-        background-size:
-            26px, 22px, 27px, 29px, 25px, 27px,
-            25px, 26px, 28px, 24px, 28px, 29px, 
-            22px, 27px, 29px, 26px, 24px, 23px, 
-            29px, 24px, 27px, 28px, 26px, 27px, 
-            28px, 27px, 28px, 29px, 22px, 27px, 
-            27px, 29px, 21px, 24px, 26px, 24px, 
-            25px, 25px, 27px, 28px, 24px, 24px, 27px;
-    }
 
     //banner done
     .banner{
@@ -395,10 +371,6 @@
         .main-title {
             font-size: 36px;
             margin-bottom: 30px;
-        }
-
-        .banner-box {
-            background-position: top 35% right 13%,  top 61% right 45%,  bottom 31% right 19%,  bottom 15% left 11%,  bottom -18% left 54%, top 76% right 0%,  top 31% right 47%,  top 45% left 26%,  top 8% right 23%,  top 0% right 0%;
         }
 
     }
@@ -438,6 +410,9 @@
 
     //product done
     .product{
+        .container {
+            max-width: 720px;
+        }
         .main-title{
             margin-left: 10px;
         }
@@ -517,9 +492,6 @@
                 font-size: 18px;
                 padding-right: 20px;
                 line-height: 1.2;
-            }
-            &-box-image {
-                background-position: top 13% right -4%, top 70% right -3%, bottom -8% right -26%, bottom 8% left 52%, top 8% left 43%, top 34% right 30%, top 66% right -43%, top 7% left 3%, top 45% right -13%, top 17% right -20%;
             }
         }
     }
@@ -613,7 +585,14 @@
             font-size: 14px;
         }
         .banner-box{
-            background-position: top 39% right 13%, top 77% right 58%, bottom 10% right 22%, bottom -3% left 1%, bottom -18% left 52%, top 76% right 0%, top 51% right 44%, top 73% left 15%, top 8% right 28%, top 0% right -2%;
+            background-position: top 98% right 6%,top 79% right -5%, top 36% right 13%, top -6% right -2%;
+            background-size: 42px, 50px, 50px, 50px;
+            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+            background-image: url(../images/food-1.png), url(../images/bons-2.png), url(../images/food-2.png), url(../images/bons-1.png);
+            img{
+                display: none;
+            }
+            
         }
     }
 
@@ -743,30 +722,13 @@
                 -ms-flex: 0 0 100%;
                 flex: 0 0 100%;
                 max-width: 100%;
+                margin-bottom: -75px;
             }
         }
         .faq-box-image {
             left: 0;
-            z-index: -1;
-            background-position: top 6% right -2%, top 3% left -3%, top 15% right -6%, top 17% left -3%, top 34% right 0%, top 31% left 0%, top 45% right -18%, top 43% left -4%, top 60% right -5%, top 57% left -23%, top 66% right -3%, top 62% left 4%, top 86% right -3%, top 74% left -2%, top 74% right 0%;
-            background-size: 35px,43px, 151px, 46px, 49px, 41px, 128px, 46px, 60px, 146px, 49px, 41px, 38px, 46px, 60px;
-            background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,;
-            background-image:
-            url(../../images/blueElips.png),
-            url(../../images/food-2.png),
-            url(../../images/elipsDots.svg),
-            url(../../images/bons-1.png),
-            url(../../images/bons-r-1.png),
-            url(../../images/blueElips.png),
-            url(../../images/elips.png),
-            url(../../images/food-b-1.png),
-            url(../../images/elips.png),
-            url(../../images/elipsDots.svg),
-            url(../../images/blueElips.png),
-            url(../../images/elips.png),
-            url(../../images/food-b-1.png),
-            url(../../images/elips.png),
-            url(../../images/elipsDots.svg);;
+            background-image: url(../images/faqmobail.png);
+            background-size: cover;
         }
     }
 
@@ -830,6 +792,16 @@
         }
         .flex-footer-contacts{
             order: 3;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .address{
+                max-width: 200px;
+            }
+            .protect{
+                margin-bottom: 20px;
+            }
         }
         .top-menu {
             margin-bottom: 15px;
@@ -859,6 +831,13 @@
     //header
     .header{
         .navbar {
+            #topnav{
+                width: 100%;
+                .images-block{
+                    max-height: 320px;
+                    min-height: 212px;
+                }
+            }
             .btn-mobileMenu {
                 width: 40px;
                 height: 40px;  
@@ -879,8 +858,6 @@
     .banner{
         .banner-box{
             left: 60%;
-            background-size: 35px, 29px, 25px, 29px, 46px, 34px, 29px, 32px, 31px, 41px;
-            background-position: top 45% right 13%, top 79% right 70%, bottom 10% right 22%, bottom -1% left 1%, bottom -12% left 52%, top 72% right 0%, top 28% right 55%, top 51% left 15%, top 9% right 25%, top 0% right 0%;
         }
         .flex-banner{
             flex: 0 0 100%;
@@ -963,25 +940,25 @@
                     }
 
                     .elips-top{
-                        background: url(../../images/elipsdotsm.svg);
+                        background: url(../images/elipsdotsm.svg);
                         width: 85px;
                         height: 85px;
                         top: 5px;
                         left: 13px;
                         &::after{
-                            background: url(../../images/blueelipsm.png);
+                            background: url(../images/blueelipsm.png);
                             width: 18px;
                             height: 18px;
                         }
                     }
                     .elips-bottom{
-                        background: url(../../images/elipsdotsm.svg);
+                        background: url(../images/elipsdotsm.svg);
                         width: 85px;
                         height: 85px;
                         bottom: -10px;
                         right: 40px;
                         &::after{
-                            background: url(../../images/blueelipsm.png);
+                            background: url(../images/blueelipsm.png);
                             width: 18px;
                             height: 18px;
                         }
@@ -1156,6 +1133,11 @@
 
     //footer
     .footer{
+        .top-menu{
+            li{
+                margin-bottom: 10px;
+            }
+        }
         .footer{
             &-subtitle {
                 margin-bottom: 12px;
@@ -1166,9 +1148,6 @@
             &-soc {
                 justify-content: center;
             }
-        }
-        .flex-footer-contacts{
-            text-align: center;
         }
     }
 }
