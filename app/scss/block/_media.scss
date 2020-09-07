@@ -47,7 +47,6 @@
     .card {
         &-box__awardI {
             max-width: 70px;
-            margin-top: -77px;
         }
 
         &-box__text {
@@ -956,6 +955,7 @@
                 .image {
                     flex: 0 0 100%;
                     max-width: 300px;
+                    max-height: 300px;
                     margin-bottom: 25px;
                     order: 1;
                     &::after{
