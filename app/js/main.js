@@ -17,10 +17,7 @@
         //Выравнивание блоков по высоте
         heightBlock('.card .card-box__text');
         heightBlock('.product .product-about .box');
-        
-        if (document.documentElement.clientWidth > 576) {
-            heightBlock('.post .post-more li');
-        }
+        heightBlock('.post .post-more li');
 
         //block hidden
         let btn = document.querySelector(".link-btn");
@@ -28,6 +25,7 @@
 
         btn.onclick = () => {
             let span = this.querySelector(".show");
+            btn.classList.toggle("active");
             let findC = hiddenBlock.classList.contains("hidden");
             !findC == true ? span.innerHTML = "Show" : span.innerHTML = "Hide";
             hiddenBlock.classList.toggle("hidden");

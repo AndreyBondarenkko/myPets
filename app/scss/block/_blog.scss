@@ -119,6 +119,12 @@
         color: $green;
         margin-bottom: 13px;
     }
+    &-doctorAbout{
+        .link-btn{
+            display: none;
+            margin: 20px auto 0 auto;
+        }
+    }
     article{
         padding: 0 15px;
     }

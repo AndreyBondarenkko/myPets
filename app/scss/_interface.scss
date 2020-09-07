@@ -238,6 +238,9 @@ body {
         &:hover .arithm::after {
             transform: rotate(0deg);
         }
+        &.active .arithm::after {
+            transform: rotate(0deg);
+        }
     }
 
 }

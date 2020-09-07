@@ -178,7 +178,7 @@
             justify-content: center;
         }
         .cons{
-            background-color: $txtColorR;
+            background-color: $apricotColor;;
         }
         .pros{
             background-color: $bgGreen;
@@ -188,6 +188,10 @@
         }
 
         ul {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
             li{
                 font-size: 18px;
                 line-height: 125%;

@@ -167,6 +167,10 @@ body {
   transform: rotate(0deg);
 }
 
+.link-btn.active .arithm::after {
+  transform: rotate(0deg);
+}
+
 .btn {
   color: #fff !important;
   cursor: pointer;
@@ -353,23 +357,23 @@ body {
 }
 
 .navbar .top-menu .menu-item > a.dogs::after {
-  background: url(../../images/dog-menu.svg);
+  background: url(../../images/dogmenu.svg);
 }
 
 .navbar .top-menu .menu-item > a.cats::after {
-  background: url(../../images/cats-menu.png);
+  background: url(../../images/catsmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.fish::after {
-  background: url(../../images/fish-menu.png);
+  background: url(../../images/fishmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.birds::after {
-  background: url(../../images/birds-menu.png);
+  background: url(../../images/birdsmenu.png);
 }
 
 .navbar .top-menu .menu-item > a.aminals::after {
-  background: url(../../images/aminals-menu.png);
+  background: url(../../images/aminalsmenu.png);
 }
 
 .navbar .top-menu .menu-item ul li a {
@@ -566,7 +570,7 @@ body {
 
 .card-box__awardI {
   max-width: 80px;
-  margin-top: -85px;
+  margin-top: -65px;
   position: relative;
 }
 
@@ -579,7 +583,7 @@ body {
   background: url(../../images/medal.png);
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 25px;
+  bottom: 20px;
   left: -30px;
   right: 0;
   width: 139px;
@@ -916,7 +920,7 @@ body {
 }
 
 .product .info .cons {
-  background-color: #fb7a9a;
+  background-color: #FFA693;
 }
 
 .product .info .pros {
@@ -925,6 +929,13 @@ body {
 
 .product .info .box {
   padding: 20px;
+}
+
+.product .info ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .product .info ul li {
@@ -1083,6 +1094,11 @@ body {
   line-height: 150%;
   color: #1E907A;
   margin-bottom: 13px;
+}
+
+.blog-doctorAbout .link-btn {
+  display: none;
+  margin: 20px auto 0 auto;
 }
 
 .blog article {
@@ -1553,6 +1569,10 @@ body {
 }
 
 @media (max-width: 1470px) {
+  .bg-image {
+    background-size: 38px, 42px, 37px, 39px, 35px, 41px, 45px, 42px, 38px, 41px, 38px, 39px,  32px, 40px, 39px, 36px, 34px, 33px,  41px, 34px, 37px, 38px, 36px, 43px,  38px, 41px, 38px, 39px, 32px, 37px,  43px, 43px, 31px, 34px, 46px, 42px,  35px, 35px, 40px, 40px, 44px, 34px, 37px;
+    background-position: top 5% left 1%, top 4% right -1%, top 7% left 0%,  top 8% right 1%, top 10% left -1%, top 11% right 0%,  top 12% left 1%, top 13% right -1%, top 15% left -0%,  top 15% right 1%, top 17% left -1%, top 18% right -0%,  top 19% left 1%, top 20% right 1%, top 22% left 0%,  top 24% right 1%, top 24% left -1%, top 26% right 0%,  top 26% left 1%, top 29% right -1%, top 29% left 0%,  top 32% right 1%, top 32% left -1%, top 35% right 0%,  top 34% left 1%, top 38% right -1%, top 38% left 0%,  top 41% right 1%, top 41% left -1%, top 44% right 0%,  top 44% left 1%, top 46% right -1%, top 46% left 0%,  top 48% right 1%, top 48% left -1%, top 50% right 0%,  top 50% left 1%, top 52% right -1%, top 52% left 0%,  top 54% right 1%, top 55% left -1%, top 57% right 0%,  top 58% left 1%, top 61% right -1%, top 62% left 0%,  top 64% right 1%, top 66% left -1%, top 68% right 0%,  top 70% left 1%, top 73% right -1%;
+  }
   .navbar #topnav {
     width: 1110px;
     height: 300px;
@@ -1593,6 +1613,9 @@ body {
   .container {
     max-width: 960px;
   }
+  .bg-image {
+    background-size: 36px, 32px, 37px, 39px, 35px, 37px, 35px, 36px, 38px, 34px, 38px, 39px,  32px, 37px, 39px, 36px, 34px, 33px,  39px, 34px, 37px, 38px, 36px, 37px,  38px, 37px, 38px, 39px, 32px, 37px,  37px, 39px, 31px, 34px, 36px, 34px,  35px, 35px, 37px, 38px, 34px, 34px, 37px;
+  }
   .btn {
     font-size: 16px;
   }
@@ -1608,9 +1631,9 @@ body {
   }
   .navbar #topnav {
     position: fixed;
-    top: 80px;
+    top: -101%;
     bottom: 0;
-    left: -300px;
+    left: 0px;
     width: 280px;
     height: 100vh;
     border-radius: 0;
@@ -1652,7 +1675,6 @@ body {
   }
   .navbar #topnav.open {
     top: 80px;
-    left: 0;
   }
   .navbar .top-menu {
     flex-direction: column;
@@ -1716,6 +1738,7 @@ body {
   }
   .product .product-thumb .image {
     max-height: 400px;
+    max-width: 400px;
   }
   .product .product-thumb .image img {
     max-width: 230px;
@@ -1797,14 +1820,8 @@ body {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .header .flex-wrapper {
-    height: 65px;
-  }
-  .header .navbar #topnav {
-    top: 65px;
-  }
-  .header .navbar #topnav.open {
-    top: 65px;
+  .bg-image {
+    background-size: 26px, 22px, 27px, 29px, 25px, 27px, 25px, 26px, 28px, 24px, 28px, 29px,  22px, 27px, 29px, 26px, 24px, 23px,  29px, 24px, 27px, 28px, 26px, 27px,  28px, 27px, 28px, 29px, 22px, 27px,  27px, 29px, 21px, 24px, 26px, 24px,  25px, 25px, 27px, 28px, 24px, 24px, 27px;
   }
   .banner .flex-banner {
     flex: 0 0 60%;
@@ -2005,12 +2022,13 @@ body {
   }
   .product .product-thumb .image {
     flex: 0 0 80%;
-    max-width: 180%;
+    max-width: 330px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
     height: 330px;
     max-height: 330px;
+    order: 1;
   }
   .product .product-thumb .image .elips-top {
     top: -5px;
@@ -2023,6 +2041,7 @@ body {
   .product .product-thumb .caption {
     flex: 0 0 100%;
     max-width: 100%;
+    order: 2;
   }
   .product .product-thumb ul > li {
     font-size: 16px;
@@ -2221,7 +2240,7 @@ body {
   }
   .product .product-thumb .image {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 300px;
     margin-bottom: 25px;
     order: 1;
   }
@@ -2282,7 +2301,7 @@ body {
     width: 100%;
   }
   .blog .resume {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
   .blog .flex-content {
     -ms-flex: 0 0 60%;
@@ -2300,6 +2319,16 @@ body {
   }
   .blog .blog-doctorAbout {
     margin-top: 20px;
+  }
+  .blog .blog-doctorAbout .wrap {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .blog .blog-doctorAbout .link-btn {
+    display: block;
+    margin-bottom: 0;
   }
   .blog .inner {
     border-top: none;
@@ -2365,9 +2394,13 @@ body {
   }
   .post-inner .caption .post-title {
     margin-bottom: 10px;
+    font-size: 18px;
   }
   .post .post-more li a {
     font-size: 15px;
+  }
+  .post .post-more li:nth-child(n+5) {
+    display: none;
   }
   .post .post-allLincks {
     padding: 30px 10px;
