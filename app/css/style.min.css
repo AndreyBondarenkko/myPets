@@ -442,7 +442,7 @@ body {
   top: 0;
   right: 0;
   background: none;
-  z-index: 3;
+  z-index: 322;
   transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
   cursor: pointer;
 }
@@ -452,6 +452,8 @@ body {
   z-index: 1;
   border-bottom: 1px solid #0E4434;
   cursor: text;
+  background: #fff;
+  opacity: .8;
 }
 
 .header .inp-group .btn-search {
@@ -2248,26 +2250,26 @@ body {
     border: 30px solid #DFFFE7;
   }
   .product .product-thumb .image .elips-top {
-    background: url(../../images/elipsDots-m.svg);
+    background: url(../../images/elipsdotsm.svg);
     width: 85px;
     height: 85px;
     top: 5px;
     left: 13px;
   }
   .product .product-thumb .image .elips-top::after {
-    background: url(../../images/blueElips-m.png);
+    background: url(../../images/blueelipsm.png);
     width: 18px;
     height: 18px;
   }
   .product .product-thumb .image .elips-bottom {
-    background: url(../../images/elipsDots-m.svg);
+    background: url(../../images/elipsdotsm.svg);
     width: 85px;
     height: 85px;
     bottom: -10px;
     right: 40px;
   }
   .product .product-thumb .image .elips-bottom::after {
-    background: url(../../images/blueElips-m.png);
+    background: url(../../images/blueelipsm.png);
     width: 18px;
     height: 18px;
   }
