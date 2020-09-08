@@ -59,7 +59,7 @@ body {
 
 .bg-image {
   position: absolute;
-  top: 0;
+  top: 4%;
   left: 0;
   right: 0;
   bottom: 0;
@@ -1592,8 +1592,8 @@ body {
     font-size: 21px;
   }
   .bg-image {
-    top: 4%;
     bottom: 9%;
+    background-position: top center;
   }
   .banner {
     margin-bottom: 50px;
