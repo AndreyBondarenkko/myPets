@@ -418,6 +418,11 @@ body {
   display: block;
 }
 
+.header .ind {
+  position: relative;
+  z-index: 5;
+}
+
 .header .flex-col-auto {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -1609,6 +1614,9 @@ body {
   }
   .card-box__text {
     margin-bottom: 60px;
+  }
+  .product .main-title {
+    margin-left: 229px;
   }
   .faq .faq-box-image {
     background-position: top 55% left 100%;
