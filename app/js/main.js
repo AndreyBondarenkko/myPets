@@ -145,7 +145,7 @@
             
             
             //change src
-            $('.flex-img > img').attr('src', '../images/Dogbgm.png');
+            $('.flex-img > img').attr('src', 'images/Dogbgm.png');
         }
     });
 
